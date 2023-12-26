@@ -9,4 +9,6 @@ object Versions {
     const val jUnit="4.13.2"
     const val extJUnit="1.1.5"
     const val lifecycle_version="2.6.2"
+    const val appcompat="1.6.1"
+    const val material="1.11.0"
 }

@@ -16,4 +16,10 @@ object Dependencies {
     val jUnit by lazy{"junit:junit"}
     val extJUnit by lazy { "androidx.test.ext:junit:${Versions.extJUnit}" }
     val lifeCycleViewModel by lazy { "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle_version}" }
+    val appcompat by lazy { "androidx.appcompat:appcompat:${Versions.appcompat}" }
+    val material by lazy { "com.google.android.material:material:${Versions.material}" }
+}
+
+object Module{
+    const val utilities= ":utilities"
 }
