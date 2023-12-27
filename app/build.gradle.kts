@@ -2,8 +2,9 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
 
-    kotlin("kapt")
+
     id("com.google.dagger.hilt.android")
+    kotlin("kapt")
 }
 
 android {
@@ -71,13 +72,16 @@ dependencies {
     debugImplementation(Dependencies.TestManifest)
 
     implementation(Dependencies.navigation)
-    implementation(Dependencies.lifeCycleViewModel)
+//    implementation(Dependencies.lifeCycleViewModel)
 
     implementation(project(Modules.utilities))
 
     implementation(Dependencies.hiltAndroid)
     kapt(Dependencies.hiltCompiler)
     kapt(Dependencies.hiltAndroidCompiler)
+//    implementation(Dependencies.hiltLifeCycleViewmodel)
+
+    implementation(Dependencies.hiltNavigationCompose)
 }
 
 kapt{

@@ -13,4 +13,6 @@ object Versions {
     const val material="1.11.0"
     const val hiltAndroid="2.44"
     const val hiltCompiler="1.1.0"
+    const val hiltLifeCycleViewmodel="1.0.0-alpha03"
+    const val hiltNavigationCompose="1.1.0"
 }
