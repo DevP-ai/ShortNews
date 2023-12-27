@@ -13,13 +13,16 @@ object Dependencies {
     val composeUITooling by lazy { "androidx.compose.ui:ui-tooling" }
     val jUnit4 by lazy { "androidx.compose.ui:ui-test-junit4" }
     val espresso by lazy{"androidx.test.espresso:espresso-core:${Versions.espresso}"}
-    val jUnit by lazy{"junit:junit"}
+    val jUnit by lazy{"junit:junit:${Versions.jUnit}"}
     val extJUnit by lazy { "androidx.test.ext:junit:${Versions.extJUnit}" }
     val lifeCycleViewModel by lazy { "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle_version}" }
     val appcompat by lazy { "androidx.appcompat:appcompat:${Versions.appcompat}" }
     val material by lazy { "com.google.android.material:material:${Versions.material}" }
+    val hiltAndroid by lazy { "com.google.dagger:hilt-android:${Versions.hiltAndroid}" }
+    val hiltAndroidCompiler by lazy { "com.google.dagger:hilt-android-compiler:${Versions.hiltAndroid}" }
+    val hiltCompiler by lazy { "androidx.hilt:hilt-compiler:${Versions.hiltCompiler}" }
 }
 
-object Module{
+object Modules{
     const val utilities= ":utilities"
 }

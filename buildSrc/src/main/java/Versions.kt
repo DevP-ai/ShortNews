@@ -11,4 +11,6 @@ object Versions {
     const val lifecycle_version="2.6.2"
     const val appcompat="1.6.1"
     const val material="1.11.0"
+    const val hiltAndroid="2.44"
+    const val hiltCompiler="1.1.0"
 }
