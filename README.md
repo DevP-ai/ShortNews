@@ -1,1 +1,1 @@
-# ShortsNews
+# ShortNews
