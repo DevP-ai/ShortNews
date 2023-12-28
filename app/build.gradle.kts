@@ -82,6 +82,8 @@ dependencies {
 //    implementation(Dependencies.hiltLifeCycleViewmodel)
 
     implementation(Dependencies.hiltNavigationCompose)
+    implementation(Dependencies.retrofit)
+    implementation(Dependencies.Gson)
 }
 
 kapt{

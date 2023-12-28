@@ -15,4 +15,9 @@ object Versions {
     const val hiltCompiler="1.1.0"
     const val hiltLifeCycleViewmodel="1.0.0-alpha03"
     const val hiltNavigationCompose="1.1.0"
+    const val retrofit="2.9.0"
+    const val okHttp="5.0.0-alpha.2"
+    const val moshi="1.14.0"
+    const val moshiConverter="2.9.0"
+    const val loggingInterceptor="4.8.1"
 }
