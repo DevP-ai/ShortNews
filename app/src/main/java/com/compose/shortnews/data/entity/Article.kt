@@ -1,4 +1,4 @@
-package com.compose.shortnews.ui.data.entity
+package com.compose.shortnews.data.entity
 
 data class Article(
     val author:String?="",
@@ -8,5 +8,5 @@ data class Article(
     val urlToImage:String?="",
     val publishedAt:String?="",
     val content:String?="",
-    val source:Source
+    val source: Source
 )

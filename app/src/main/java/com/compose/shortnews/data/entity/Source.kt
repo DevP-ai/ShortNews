@@ -1,4 +1,4 @@
-package com.compose.shortnews.ui.data.entity
+package com.compose.shortnews.data.entity
 
 data class Source(
     val id:String?="",

@@ -1,4 +1,4 @@
 package com.compose.shortnews.ui.repository
 
-class NewRepository {
+class NewsRepository {
 }
