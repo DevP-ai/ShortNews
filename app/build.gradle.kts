@@ -84,6 +84,10 @@ dependencies {
     implementation(Dependencies.hiltNavigationCompose)
     implementation(Dependencies.retrofit)
     implementation(Dependencies.Gson)
+    implementation(Dependencies.okHttp)
+    implementation(Dependencies.moshi)
+    implementation(Dependencies.moshiConverter)
+    implementation(Dependencies.loggingInterceptor)
 }
 
 kapt{
