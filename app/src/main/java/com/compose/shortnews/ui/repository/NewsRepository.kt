@@ -1,6 +1,6 @@
 package com.compose.shortnews.ui.repository
 
-import com.compose.shortnews.data.datasource.NewsDataSource
+import  com.compose.shortnews.data.datasource.NewsDataSource
 import com.compose.shortnews.data.entity.NewsResponse
 import retrofit2.Response
 import javax.inject.Inject
