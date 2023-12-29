@@ -60,9 +60,9 @@ class AppModule {
     }
 
 
-//    @Provides
-//    @Singleton
-//    fun provideNewsRepository(newsDataSource: NewsDataSource):NewsRepository{
-//        return NewsRepository(newsDataSource)
-//    }
+    @Provides
+    @Singleton
+    fun provideNewsRepository(newsDataSource: NewsDataSource):NewsRepository{
+        return NewsRepository(newsDataSource)
+    }
 }
