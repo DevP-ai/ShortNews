@@ -5,5 +5,5 @@ import retrofit2.Response
 
 interface NewsDataSource {
 
-    fun getNewsHeadlineFromDataSource(country:String): Response<NewsResponse>
+    suspend fun getNewsHeadlineFromDataSource(country:String): Response<NewsResponse>
 }

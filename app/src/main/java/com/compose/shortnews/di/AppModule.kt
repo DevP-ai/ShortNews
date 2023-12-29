@@ -2,6 +2,8 @@ package com.compose.shortnews.di
 
 import com.compose.shortnews.data.AppConstants
 import com.compose.shortnews.data.api.ApiService
+import com.compose.shortnews.data.datasource.NewsDataSource
+import com.compose.shortnews.data.datasource.NewsHeadlineFromDataSourceImplementation
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import dagger.Module
@@ -48,5 +50,11 @@ class AppModule {
     @Provides
     fun provideApiService(retrofit: Retrofit):ApiService{
         return retrofit.create(ApiService::class.java)
+    }
+
+    @Provides
+    @Singleton
+    fun provideNewsDataSource(apiService: ApiService):NewsDataSource{
+        return NewsHeadlineFromDataSourceImplementation(apiService)
     }
 }
