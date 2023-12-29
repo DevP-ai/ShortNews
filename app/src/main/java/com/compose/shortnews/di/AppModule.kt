@@ -4,6 +4,7 @@ import com.compose.shortnews.data.AppConstants
 import com.compose.shortnews.data.api.ApiService
 import com.compose.shortnews.data.datasource.NewsDataSource
 import com.compose.shortnews.data.datasource.NewsHeadlineFromDataSourceImplementation
+import com.compose.shortnews.ui.repository.NewsRepository
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import dagger.Module
@@ -57,4 +58,11 @@ class AppModule {
     fun provideNewsDataSource(apiService: ApiService):NewsDataSource{
         return NewsHeadlineFromDataSourceImplementation(apiService)
     }
+
+
+//    @Provides
+//    @Singleton
+//    fun provideNewsRepository(newsDataSource: NewsDataSource):NewsRepository{
+//        return NewsRepository(newsDataSource)
+//    }
 }

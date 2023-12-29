@@ -33,5 +33,5 @@ sealed class ResourceState<T> {
     It represents the state when an error occurs during the data loading or processing.
     It contains an error property of type T, indicating the details of the error.
      */
-    data class Error<T>(val error: T) : ResourceState<T>()
+    data class Error<T>(val error: Any) : ResourceState<T>()
 }
