@@ -3,6 +3,7 @@ package com.compose.shortnews.ui.repository
 import  com.compose.shortnews.data.datasource.NewsDataSource
 import com.compose.shortnews.data.entity.NewsResponse
 import com.compose.utilities.ResourceState
+import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.flow
 import javax.inject.Inject
@@ -15,7 +16,7 @@ class NewsRepository @Inject constructor(
 //        return newsDataSource.getNewsHeadlineFromDataSource(country)
 //    }
 
-    suspend fun getNewsHeadlineFromDataSource(country: String): kotlinx.coroutines.flow.Flow<ResourceState<NewsResponse>>{
+    suspend fun getNewsHeadlineFromDataSource(country: String): Flow<ResourceState<NewsResponse>> {
         return flow {
             emit(ResourceState.Loading())
             val response = newsDataSource.getNewsHeadlineFromDataSource(country)
