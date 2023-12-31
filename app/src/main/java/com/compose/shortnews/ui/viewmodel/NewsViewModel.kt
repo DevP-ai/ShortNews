@@ -2,6 +2,7 @@ package com.compose.shortnews.ui.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.compose.shortnews.data.AppConstants
 import com.compose.shortnews.data.entity.NewsResponse
 import com.compose.shortnews.ui.repository.NewsRepository
 import com.compose.utilities.ResourceState
@@ -22,7 +23,10 @@ class NewsViewModel @Inject constructor(
     private val _news: MutableStateFlow<ResourceState<NewsResponse>> = MutableStateFlow(ResourceState.Loading())
     val news:StateFlow<ResourceState<NewsResponse>> = _news
 
-    fun getNews(country:String){
+    init {
+        getNews(AppConstants.COUNTRY)
+    }
+    private fun getNews(country:String){
         viewModelScope.launch(Dispatchers.IO){
              newsRepository.getNewsHeadlineFromDataSource(country)
                  .collectLatest {newsResponse->
