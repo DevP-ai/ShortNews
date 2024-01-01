@@ -31,6 +31,7 @@ object Dependencies {
     val moshi by lazy {"com.squareup.moshi:moshi-kotlin:${Versions.moshi}"}
     val coroutineCore by lazy { "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutineCore}" }
     val coroutineAndroid by lazy { "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutineCore}" }
+    val splashScreen by lazy { "androidx.core:core-splashscreen:${Versions.splashScreen}" }
 }
 
 object Modules{

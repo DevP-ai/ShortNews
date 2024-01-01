@@ -90,6 +90,7 @@ dependencies {
     implementation(Dependencies.loggingInterceptor)
     implementation(Dependencies.coroutineCore)
     implementation(Dependencies.coroutineAndroid)
+    implementation(Dependencies.splashScreen)
 }
 
 kapt{
