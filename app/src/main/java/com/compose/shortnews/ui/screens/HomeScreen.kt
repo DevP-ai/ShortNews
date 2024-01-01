@@ -9,6 +9,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.compose.shortnews.ui.components.Loader
 import com.compose.shortnews.ui.viewmodel.NewsViewModel
 import com.compose.utilities.ResourceState
 
@@ -28,12 +29,15 @@ fun HomeScreen(
        when(newsRes){
            is ResourceState.Loading->{
                Log.d(TAG,"Inside_Loading..")
+               Loader()
            }
            is ResourceState.Success->{
+               val response= (newsRes as ResourceState.Success).data
+               Log.d(TAG,"Inside_Success..${response.totalResults}")
 
            }
            is ResourceState.Error->{
-
+               Log.d(TAG,"Inside_Error..")
            }
        }
     }

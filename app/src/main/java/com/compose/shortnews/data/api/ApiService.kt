@@ -1,5 +1,6 @@
 package com.compose.shortnews.data.api
 
+import com.compose.shortnews.data.AppConstants.API_KEY
 import com.compose.shortnews.data.entity.NewsResponse
 import retrofit2.Response
 import retrofit2.http.GET
@@ -14,7 +15,7 @@ interface ApiService {
     @GET("top-headlines")
     suspend fun getNewsHeadline(
         @Query("country")country:String,
-        @Query("apiKey")apiKey:String="YOUR_API_KEY"
+        @Query("apiKey")apiKey:String=API_KEY
     ):Response<NewsResponse>
 }
 
